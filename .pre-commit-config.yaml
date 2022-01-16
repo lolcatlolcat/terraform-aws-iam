@@ -1,0 +1,26 @@
+repos:
+- repo: https://github.com/antonbabenko/pre-commit-terraform
+  rev: ac9299cf5747910d46edd12f311a3fd024f1cb90  # v1.62.3
+  hooks:
+    - id: terraform_tfsec
+
+- repo: https://github.com/pre-commit/pre-commit-hooks
+  rev: 8fe62d14e0b4d7d845a7022c5c2c3ae41bdd3f26  # v4.1.0
+  hooks:
+    - id: detect-aws-credentials
+    - id: detect-private-key
+    - id: end-of-file-fixer
+
+- repo: https://github.com/gruntwork-io/pre-commit
+  rev: v0.1.11
+  hooks:
+    - id: terraform-fmt
+    - id: terragrunt-hclfmt
+    - id: tflint
+
+- repo: https://github.com/terraform-docs/terraform-docs
+  rev: v0.16.0
+  hooks:
+    - id: terraform-docs-go
+      args: ["-c", "_docs/terraform-docs.yml", "."]
+      files: ^modules$
