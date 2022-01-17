@@ -3,3 +3,5 @@ This module is designed to create an AWS IAM role. Currently this module, throug
 
 * An IAM role for a user/group to assume _into_
 * An IAM role to _be_ assumed into
+
+This module allows you flexibility in how/what you attach policies to the IAM role based on what variables you set. See [USAGE](#usage) for examples.
