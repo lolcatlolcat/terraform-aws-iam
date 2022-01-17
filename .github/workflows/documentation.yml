@@ -14,4 +14,3 @@ jobs:
       with:
         find-dir: modules/
         config-file: _github/configs/terraform-docs.yml
-        recursive: true
