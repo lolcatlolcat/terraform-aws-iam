@@ -13,4 +13,4 @@ jobs:
       uses: terraform-docs/gh-actions@v0.11.0
       with:
         find-dir: modules/
-        config-file: _github/configs/terraform-docs.yml
+        config-file: _docs/terraform-docs.yml
